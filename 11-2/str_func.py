@@ -5,7 +5,7 @@ def my_str_upper(text: str):
     на выход - переменная строкового типа 
     
     """
-    return text.upper()
+    return text.strip().upper()
 
 
 def my_str_title(text: str):
