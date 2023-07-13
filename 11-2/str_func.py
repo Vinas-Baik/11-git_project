@@ -5,14 +5,14 @@ def my_str_upper(text: str):
     на выход - переменная строкового типа 
     
     """
-    return text.upper()
+    return ' '.join(word_text.upper() for word_text in text.strip().split())
 
 
 def my_str_title(text: str):
     """
     возвращает строку text c заглавными буквам каждого слова в строке
     """
-    return ' '.join(word.title() for word in text.strip().split())
+    return ' '.join(word_text.title() for word_text in text.strip().split())
 
 
 # print(my_str_title('возвращает строку text c заглавными буквам каждого слова в строке'))
